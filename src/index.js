@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {VotosContext} from './contexts/VotosContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <VotosContext>
+      <App />
+    </VotosContext>
   </React.StrictMode>,
   document.getElementById('root')
 );
